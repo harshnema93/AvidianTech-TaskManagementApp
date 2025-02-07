@@ -26,10 +26,10 @@ namespace TaskManagementApi.Services
             {
                 _logger.LogInformation("Fetching tasks with filter: search={Search}, category={Category}, priority={Priority}", searchTerm, category, priority);
 
-                // Build the base query using IQueryable for efficient filtering
+               
                 IQueryable<TaskManagementApi.Models.Task> query = _context.Tasks.Include(t => t.Category);
 
-                // Apply filters only if the parameters are provided
+                
                 if (!string.IsNullOrEmpty(searchTerm))
                 {
                     query = query.Where(t => t.Title.Contains(searchTerm) || (t.Description != null && t.Description.Contains(searchTerm)));
