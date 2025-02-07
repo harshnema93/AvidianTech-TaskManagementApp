@@ -43,7 +43,7 @@ namespace TaskManagementApi.Services
                     query = query.Where(t => t.Priority == priority);
                 }
 
-                // Execute the query only once, at the end.
+                
                 return await query.ToListAsync();
             }
             catch (Exception ex)
