@@ -125,5 +125,8 @@ Follow these steps to set up and run the Task Management System.
 
 *   Make sure to install the .NET SDk, npm, and download an integrated database that is used by the backend. Without all the settings, you may not be able to set this up so double check them!
 
+**Here's a glimpse of the Task Management System's user interface:**
+
+<img width="940" alt="image" src="https://github.com/user-attachments/assets/6325d6eb-47f0-42d1-8964-3038e9b38cd0" />
 
 
